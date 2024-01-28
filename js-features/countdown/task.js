@@ -12,7 +12,7 @@ let timerValue = time[0] * 3600 + time[1] * 60 + time[2];
 
 const timerInterval = setInterval(() => {
     timerValue--;
-    timerSpan.textContent = `${secondsToString(timerValue)}`;
+    timerSpan.textContent = secondsToString(timerValue);
 
     if (timerValue === 0) {
         clearInterval(timerInterval);
